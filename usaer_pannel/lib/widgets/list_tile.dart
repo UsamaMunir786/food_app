@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:usaer_pannel/screen/profile_screen.dart';
+import 'package:usaer_pannel/widgets/review_cart.dart';
 
 class DrawerTile extends StatelessWidget {
 
@@ -59,7 +60,9 @@ class DrawerTile extends StatelessWidget {
                 listTile(icon: Icons.home_outlined, title: 'Home', onTap: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileScreen()));
                 }, ),
-                listTile(icon: Icons.shopify_outlined, title: 'Review Cart', onTap: (){},),
+                listTile(icon: Icons.shopify_outlined, title: 'Review Cart', onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ReviewCart()));
+                },),
                 listTile(icon: Icons.person_2_outlined, title: 'Profile', onTap: (){},),
                 listTile(icon: Icons.notification_important_outlined, title: 'Notification', onTap: (){},),
                 listTile(icon: Icons.star_outline, title: 'Rating & Preview', onTap: (){},),

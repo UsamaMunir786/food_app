@@ -46,7 +46,9 @@ class SearchScreen extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-            SearchItem(),
+            SingleItem(),
+            SingleItem(),
+            SingleItem(),
           ],
         ),
       ),
